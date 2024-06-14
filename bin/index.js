@@ -1,4 +1,5 @@
 import inquirer from "inquirer"; // For interactive prompts
+import chalk from "chalk";
 import { loadConfig, saveConfig } from "../utils/config.js"; 
 import { startServer } from "../server.js";
 
