@@ -74,7 +74,7 @@ graph TD;
 
 ## Project Structure
 
-
+```
 load-balancer/
 │
 ├── bin/
@@ -100,7 +100,7 @@ load-balancer/
 ├── package-lock.json # Automatically generated for any operations where npm modifies either the node_modules tree, or package.json
 ├── package.json # Manifest file for Node.js projects, includes metadata (such as dependencies)
 └── server.js # Main server file
-
+```
 ## Features
 - *Dynamic Load Balancing*: Distributes requests based on server health and request load.
 - *Health Checks*: Regularly checks the health of servers to ensure traffic is only sent to operational servers.
@@ -121,10 +121,10 @@ load-balancer/
 
 | Command                                 | Description                                         |
 |-----------------------------------------|-----------------------------------------------------|
-| `git clone https://github.com/yourusername/load-balancer.git` | Clone the repository                               |
-| `cd load-balancer`                      | Navigate to the project directory                   |
-| `npm install`                           | Install dependencies                                |
-| `npm start`                             | Start the server                                    |
+| `git clone https://github.com/yourusername/load-balancer.git` <button onclick="navigator.clipboard.writeText('git clone https://github.com/yourusername/load-balancer.git')">Copy</button> | Clone the repository                               |
+| `cd load-balancer` <button onclick="navigator.clipboard.writeText('cd load-balancer')">Copy</button>                      | Navigate to the project directory                   |
+| `npm install` <button onclick="navigator.clipboard.writeText('npm install')">Copy</button>                           | Install dependencies                                |
+| `npm start` <button onclick="navigator.clipboard.writeText('npm start')">Copy</button>                             | Start the server                                    |
 
 
 This command will invoke the CLI to configure and initiate the load balancer server as specified in your settings.
