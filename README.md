@@ -1,4 +1,5 @@
 <div align="center">
+https://load-balancer-r5cxq37sm-shivansh270s-projects.vercel.app/
 <h1><b> Intelligent Load Balancer</b></h1>
 <p>This project implements a dynamic and configurable load balancer using Node.js. It efficiently distributes incoming network or application traffic across multiple servers to ensure optimal resource utilization, minimize response times, and avoid overload on any single server.</p>
 </div>
@@ -19,8 +20,6 @@
 - [Authors and Acknowledgment](#authors-and-acknowledgment)
 - [Versioning](#versioning)
 - [Contact Information](#contact-information)
-
-[Load Balancer App](https://load-balancer-r5cxq37sm-shivansh270s-projects.vercel.app)
 
 ## Overview
 This project is a Node.js application designed to distribute incoming network traffic across multiple servers, thereby increasing the availability and reliability of applications. It dynamically assesses the health of servers, managing traffic to ensure high availability and optimal performance across the server pool.
