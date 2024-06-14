@@ -59,6 +59,7 @@ The load balancer processes incoming requests as follows:
 
 Below is a diagram illustrating how the load balancer implements different strategies to distribute requests among servers:
 
+```
 graph TD;
   subgraph Servers
     Server1[Server 1]
@@ -70,7 +71,7 @@ graph TD;
   LoadBalancer -->|Priority Queue| Server2
   LoadBalancer -->|Round-Robin| Server3
   LoadBalancer -->|Custom Strategy| Server4
-
+```
 
 ## Project Structure
 
