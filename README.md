@@ -43,16 +43,16 @@ The load balancer supports multiple strategies for distributing requests:
 
 The load balancer processes incoming requests as follows:
 
-1. **Request Arrival:**
+- **Request Arrival:**
    - Incoming requests are received by the load balancer server.
 
-2. **Load Balancing Decision:**
+- **Load Balancing Decision:**
    - The load balancer determines the appropriate server based on the configured load balancing strategy.
 
-3. **Server Selection:**
+- **Server Selection:**
    - The request is forwarded to the selected server for processing.
 
-4. **Response Return:**
+- **Response Return:**
    - The server processes the request and sends back the response to the client through the load balancer.
 
 ## Visual Representation of Request Distribution
@@ -118,12 +118,6 @@ load-balancer/
 - *Chalk*: Terminal string styling.
 
 ## Installation Instructions
-1. Clone the repository:
-
-git clone https://github.com/yourusername/load-balancer.git
-
-
-2. Navigate to the project directory:
 
 | Command                                 | Description                                         |
 |-----------------------------------------|-----------------------------------------------------|
