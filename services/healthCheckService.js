@@ -22,7 +22,7 @@ const healthCheck = async (config) => {
           `${server}${config.healthCheckEndpoint}`
         );
         if (response.status === 200) {
-          console.log(chalk.green(`Server ${server} is healthy`));
+          console.log(chalk.green(`Server ${server} is healthy`)); // Server is healthy
           updateServerHealth(server, true);
         } else {
           console.log(
@@ -30,16 +30,16 @@ const healthCheck = async (config) => {
               `Server ${server} responded with status ${response.status}`
             )
           );
-          updateServerHealth(server, false);
+          updateServerHealth(server, false); // Server responded with an error
         }
       } catch (error) {
         console.log(
           chalk.red(`Server ${server} health check failed: ${error.message}`)
         );
-        updateServerHealth(server, false);
+        updateServerHealth(server, false); // Server health check failed
       }
     }
   } catch (error) {
-    console.error(chalk.red(`Health check error: ${error.message}`));
+    console.error(chalk.red(`Health check error: ${error.message}`)); // Health check process error
   }
 };

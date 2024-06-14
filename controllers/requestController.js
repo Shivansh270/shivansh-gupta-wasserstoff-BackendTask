@@ -9,13 +9,13 @@ export const handleRequest = async (req, res, config) => {
       }\nUser-Agent: ${req.get("User-Agent")}`
     );
 
-    const strategy = req.headers["x-queue-strategy"] || "fifo"; // Set queue strategy from request header or default to FIFO
-    addToQueue(req, res, strategy);
-    processQueue(config, strategy);
+    const strategy = req.headers["x-queue-strategy"] || "fifo"; // Determine queue strategy
+    addToQueue(req, res, strategy); // Add request to queue
+    processQueue(config, strategy); // Process the queue
   } catch (error) {
     res.status(500).json({
       success: false,
-      error: error.message,
+      error: error.message, // Return error message
     });
   }
 };

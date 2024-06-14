@@ -1,4 +1,3 @@
-// Import required modules
 import express from "express";
 import { handleRequest } from "./controllers/requestController.js";
 import { loggerMiddleware } from "./middlewares/loggerMiddleware.js";
@@ -12,9 +11,9 @@ const PORT = 4000;
 // Load configuration
 const config = loadConfig();
 
-app.use(express.json()); // Add middleware to parse JSON bodies
+app.use(express.json()); // Middleware to parse JSON bodies
 
-// Middleware for logging
+// Logger middleware
 app.use(loggerMiddleware);
 
 // Handle all incoming requests
@@ -36,7 +35,7 @@ app.post("/api/data", (req, res) => {
 const startServer = () => {
   app.listen(PORT, () => {
     console.log(`Load Balancer is running on port: ${PORT}`);
-    scheduleHealthCheck(config);
+    scheduleHealthCheck(config); // Schedule health checks
   });
 };
 

@@ -3,6 +3,7 @@ import winston from "winston";
 let healthyServers = [];
 let deadServers = [];
 
+// Configure Winston logger
 const logger = winston.createLogger({
   level: "info",
   format: winston.format.combine(
@@ -21,6 +22,7 @@ const logger = winston.createLogger({
   ],
 });
 
+// Update the health status of a server
 const updateServerHealth = (server, isHealthy) => {
   if (isHealthy && !healthyServers.includes(server)) {
     healthyServers.push(server);

@@ -127,3 +127,4 @@ build/
 
 # Static folder
 static/
+.vercel
