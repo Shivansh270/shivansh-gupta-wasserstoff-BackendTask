@@ -8,6 +8,8 @@
   - [Load Balancing Strategy](#load-balancing-strategy)
     - [Operational Mechanism](#operational-mechanism)
     - [Request Handling](#request-handling)
+-[Link]  Inspect: https://vercel.com/shivansh270s-projects/load-balancer/3R4Bz4pvEz49RjevMSfhDbZFMQP9
+         Preview: https://load-balancer-r5cxq37sm-shivansh270s-projects.vercel.app
 - [Visual Representation of Request Distribution](#visual-representation-of-request-distribution)
 - [Project Structure](#project-structure)
 - [Features](#features)
