@@ -78,28 +78,28 @@ graph TD;
 load-balancer/
 │
 ├── bin/
-│   └── index.js                    # Entry point script located in bin
+│ └── index.js # Entry point script located in bin
 │
 ├── controllers/
-│   └── requestController.js        # Handles incoming requests
+│ └── requestController.js # Handles incoming requests
 │
 ├── middlewares/
-│   └── loggerMiddleware.js         # Middleware for logging
+│ └── loggerMiddleware.js # Middleware for logging
 │
 ├── services/
-│   ├── healthCheckService.js       # Service for health checking
-│   ├── loadBalancerService.js      # Main load balancer logic
-│   └── queueService.js             # Service for managing queue operations
+│ ├── healthCheckService.js # Service for health checking
+│ ├── loadBalancerService.js # Main load balancer logic
+│ └── queueService.js # Service for managing queue operations
 │
 ├── utils/
-│   ├── config.js                   # Utility for configuration handling
-│   └── logger.js                   # Utility for logging functionality
+│ ├── config.js # Utility for configuration handling
+│ └── logger.js # Utility for logging functionality
 │
-├── .gitignore                      # Specifies intentionally untracked files to ignore
-├── config.json                     # JSON configuration file
-├── package-lock.json               # Automatically generated for any operations where npm modifies either the node_modules tree, or package.json
-├── package.json                    # Manifest file for Node.js projects, includes metadata (such as dependencies)
-└── server.js                       # Main server file
+├── .gitignore # Specifies intentionally untracked files to ignore
+├── config.json # JSON configuration file
+├── package-lock.json # Automatically generated for any operations where npm modifies either the node_modules tree, or package.json
+├── package.json # Manifest file for Node.js projects, includes metadata (such as dependencies)
+└── server.js # Main server file
 
 ## Features
 - *Dynamic Load Balancing*: Distributes requests based on server health and request load.
@@ -125,27 +125,12 @@ git clone https://github.com/yourusername/load-balancer.git
 
 2. Navigate to the project directory:
 
-
-cd load-balancer
-
-3. Install dependencies:
-
-
-npm install
-
-
-4. Start the server:
-
-
-npm start
-
-
-## Usage
-
-To start the load balancer, run the following command:
-
-
-npm start
+| Command                                 | Description                                         |
+|-----------------------------------------|-----------------------------------------------------|
+| `git clone https://github.com/yourusername/load-balancer.git` | Clone the repository                               |
+| `cd load-balancer`                      | Navigate to the project directory                   |
+| `npm install`                           | Install dependencies                                |
+| `npm start`                             | Start the server                                    |
 
 
 This command will invoke the CLI to configure and initiate the load balancer server as specified in your settings.
