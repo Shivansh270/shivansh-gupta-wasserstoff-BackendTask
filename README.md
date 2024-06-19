@@ -126,7 +126,7 @@ load-balancer/
 | `git clone https://github.com/Shivansh270/shivansh-gupta-wasserstoff-BackendTask.git` | Clone the repository          |
 | `cd load-balancer`                      | Navigate to the project directory                   |
 | `npm install`                           | Install dependencies                                |
-| `npm start`                             | Start the server                                    |
+| `node bin/index.js`                             | Start the server                                    |
 
 This command will invoke the CLI to configure and initiate the load balancer server as specified in your settings.
 
